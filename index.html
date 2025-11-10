@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="Emblem_of_the_State_of_Kuwait.svg"> 
+    <title>نظام الطلبات الرسمي - وزارة الكهرباء والماء</title>
+
+    <!-- Google Fonts for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- PDF Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="name-prompt-overlay">
+        <div id="name-prompt-box">
+            <h2>نظام الطلبات الرسمي <br> وزارة الكهرباء والماء والطاقة المتجددة</h2>
+            <div class="input-group"><input type="text" id="full-name-input" placeholder="الاسم الكامل" required></div>
+            <div class="input-group"><input type="text" id="employee-id-input" placeholder="الرقم الوظيفي" required></div>
+            <div class="input-group"><input type="text" id="civil-id-input" placeholder="الرقم المدني" required></div>
+            <div class="input-group"><input type="text" id="management-name-input" placeholder="اسم الإدارة" required></div>
+            <button id="submit-name-btn">دخول</button>
+        </div>
+    </div>
+
+    <div class="container" id="main-container">
+        <header>
+            <div class="header-top">
+                <div id="welcome-message"></div>
+                <div class="datetime">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                </div>
+            </div>
+            <div class="main-header">
+                <img src="mew_ar.svg" alt="MEW Logo" class="logo">
+                <h1 id="app-title">تقديم طلب رسمي</h1>
+            </div>
+        </header>
+
+        <main>
+            <nav id="main-nav">
+                <!-- Previous Button -->
+                <button id="nav-prev-btn" class="nav-arrow" title=" السابق">←</button>
+                
+                <!-- Wrapper Div -->
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-target="leaves-assignments-section">الإجازات والتكليف</a></li>
+                        <li><a href="#" class="nav-link" data-target="permits-section">الأذونات والتصاريح</a></li>
+                        <li><a href="#" class="nav-link" data-target="other-requests-section">طلبات أخرى</a></li>
+                        <li><a href="#" class="nav-link" data-target="notifications-section">الإشعارات</a></li>
+                    </ul>
+                </div>
+
+                <!-- Next Button -->
+                <button id="nav-next-btn" class="nav-arrow" title="التالي">→</button>
+            </nav>
+
+            <div class="main-grid">
+                <div id="content-area">
+                    <div id="leaves-assignments-section" class="content-tab active"></div>
+                    <div id="permits-section" class="content-tab"></div>
+                    <div id="other-requests-section" class="content-tab"></div>
+                    <div id="notifications-section" class="content-tab"></div>
+                </div>
+                <aside id="summary-section">
+                    <h2 id="summary-title">ملخص الطلبات</h2>
+                    <div id="summary-items"></div>
+                    <button id="submit-request-btn">إصدار طلب رسمي</button>
+                </aside>
+            </div>
+        </main>
+    </div>
+    
+    <div id="invoice-content" style="display: none; position: absolute; left: -9999px;"></div>
+
+    <script src="script.js"></script>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top-btn" title="العودة إلى الأعلى">▲</a>
+
+</body>
+</html>
