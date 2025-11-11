@@ -188,8 +188,10 @@ const siteContent = {
                     <thead><tr style="background-color: #f2f2f2;"><th style="padding: 12px; border: 1px solid #ccc; width: 30%;">نوع الطلب</th><th style="padding: 12px; border: 1px solid #ccc;">التفاصيل</th></tr></thead>
                     <tbody>${itemsHtml}</tbody></table>
                 <table style="width: 100%; margin-top: 60px; text-align: center;">
+                    <tr><td style="padding: 10px;">..............................</td><td style="padding: 10px;"></td></tr>
+                    <tr><td style="padding: 10px; font-weight: bold;">توقيع الموظف</td><td style="padding: 10px; font-weight: bold;"></td></tr>
                     <tr><td style="padding: 10px;">..............................</td><td style="padding: 10px;">..............................</td></tr>
-                    <tr><td style="padding: 10px; font-weight: bold;">توقيع الموظف</td><td style="padding: 10px; font-weight: bold;">توقيع المدير المباشر</td></tr>
+<tr><td style="padding: 10px; font-weight: bold;">توقيع المسؤول المباشر</td><td style="padding: 10px; font-weight: bold;">اعتماد المراقب</td></tr>
                 </table></div>`;
         
         invoiceContentEl.style.display = 'block';
