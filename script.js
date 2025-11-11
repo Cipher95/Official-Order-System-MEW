@@ -169,7 +169,7 @@ const siteContent = {
             itemsHtml += `<tr><td style="padding: 10px; border: 1px solid #ccc; vertical-align: top;">${req.title}</td><td style="padding: 10px; border: 1px solid #ccc;">${details}</td></tr>`;
         });
         
-        const logoUrl = 'https://www.mew.gov.kw/images/logo.png';
+        const logoUrl = 'mew_ar.png';
         const invoiceContentEl = getEl('invoice-content');
         invoiceContentEl.innerHTML = `
             <div style="font-family: 'Cairo', sans-serif; padding: 40px; color: #333; direction: rtl; width: 800px; border: 1px solid #333;">
