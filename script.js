@@ -74,7 +74,7 @@ const siteContent = {
         // --- Tab 3: Other Requests ---
         let otherRequestsHTML = '';
         siteContent.otherRequestTypes.forEach(type => {
-            otherRequestsHTML += `<div class="request-card"><h3>${type.title}</h3><p>${type.description}</p><div class="request-controls"><div style="grid-column: span 2;"><label for="permit-date-${type.id}">التاريخ:</label><input type="date" id="permit-date-${type.id}"></div><div><label for="details-${type.id}">${type.detailsLabel}</label><textarea id="details-${type.id}"></textarea></div></div><button class="add-request-btn" data-type="other_request" data-id="${type.id}">إضافة تصريح</button></div>`;
+            otherRequestsHTML += `<div class="request-card"><h3>${type.title}</h3><p>${type.description}</p><div class="request-controls"><div style="grid-column: span 2;"><label for="permit-date-${type.id}">التاريخ:</label><input type="date" id="permit-date-${type.id}"></div><div><label for="details-${type.id}">${type.detailsLabel}</label><textarea id="details-${type.id}"></textarea></div></div><button class="add-request-btn" data-type="other_request" data-id="${type.id}">إضافة طلب</button></div>`;
         });
         getEl('other-requests-section').innerHTML = otherRequestsHTML;
         
